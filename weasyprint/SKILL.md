@@ -7,7 +7,7 @@ description: Use when user wants to convert a PDF to editable HTML, convert HTML
 
 ## Overview
 
-Two independent workflows: **PDF → editable HTML** (Claude reads PDF, generates print-optimized HTML) and **HTML → PDF** (run weasyprint CLI). Iterate on HTML with user text feedback until pixel-perfect.
+Two independent workflows: **PDF → editable HTML** (the agent reads PDF, generates print-optimized HTML) and **HTML → PDF** (run weasyprint CLI). Iterate on HTML with user text feedback until pixel-perfect.
 
 ## Workflow A — PDF → HTML
 

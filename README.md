@@ -1,6 +1,6 @@
-# Claude Code Skills
+# Coding Agent Skills
 
-A collection of skills for [Claude Code](https://claude.ai/code) that extend its capabilities with specialized tools and workflows.
+A collection of skills for AI coding agents (such as [Claude Code](https://claude.ai/code) and Antigravity AI) that extend their capabilities with specialized tools and workflows.
 
 ## Skills
 
@@ -13,8 +13,26 @@ A collection of skills for [Claude Code](https://claude.ai/code) that extend its
 | [teamcity-cli](teamcity-cli/SKILL.md) | Work with TeamCity CI/CD builds, logs, queues, and pipelines |
 | [weasyprint](weasyprint/SKILL.md) | Convert HTML to PDF and clone PDFs as editable HTML using WeasyPrint |
 
+## Installation
+
+You can install all the skills to your agent's configuration directory automatically using the provided installation script:
+
+```bash
+./install.sh
+```
+
+The script will automatically detect local installations of supported agents:
+- **Claude Code**: Installs to `~/.claude/skills`
+- **Antigravity AI**: Installs to `~/.gemini/config/skills`
+
+And copy the skills into the respective directories.
+
+### Options
+- `--claude`: Force installation for Claude Code only.
+- `--antigravity` / `--gemini`: Force installation for Antigravity AI only.
+- `--both`: Force installation for both.
+- `-h`, `--help`: Show the help message.
+
 ## Usage
 
-Skills are loaded by Claude Code via the `Skill` tool. To use these skills, add this repository as a skills source in your Claude Code configuration.
-
-See the [Claude Code documentation](https://docs.anthropic.com/en/docs/claude-code) for details on installing and configuring skills.
+Skills are loaded by compatible AI coding agents via the `Skill` tool.

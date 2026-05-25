@@ -666,7 +666,7 @@ confluence convert -i page.xml --input-format storage --output-format markdown
 
 ### `install-skill`
 
-Copy the Claude Code skill documentation into your project's `.claude/skills/` directory so Claude Code can learn confluence-cli automatically.
+Copy the skill documentation into your project's agent configuration directory so the AI coding agent can learn confluence-cli automatically.
 
 ```sh
 confluence install-skill [--dest <directory>] [--yes]
